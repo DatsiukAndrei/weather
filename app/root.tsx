@@ -1,10 +1,6 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import { type PropsWithChildren } from "react";
-import type { LinksFunction } from "@remix-run/node";
 import "./tailwind.css";
-import { getLinks } from "~/getLinks";
-
-export const links:LinksFunction = () => [...getLinks()];
 
 export function Layout({ children }: PropsWithChildren) {
   return (
