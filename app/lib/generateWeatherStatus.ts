@@ -1,5 +1,3 @@
-
-
 export function generateWeatherStatus(temperature: number): string {
   if (temperature < 10) {
     return "Cold";

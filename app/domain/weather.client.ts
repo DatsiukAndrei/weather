@@ -13,9 +13,13 @@ export interface ResponseWeatherDataI {
   windspeed: number;
 }
 
+//Better to use environment variables
+const WEATHER_URL = "https://api.open-meteo.com/v1/forecast";
+const COORDINATES_URL = "https://geocoding-api.open-meteo.com/v1/search";
+
 export const getCityWeather = async ({latitude , longitude}:CityWeatherParamsI):Promise<ResponseWeatherDataI> => {
-  //Better to use environment variables
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+  const url = `${WEATHER_URL}?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -31,8 +35,8 @@ export const getCityWeather = async ({latitude , longitude}:CityWeatherParamsI):
 
 
 export const getCoordinatesByCity = async ({city}: {city:string}) => {
-  //Better to use environment variables
-  const url = `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1&language=en&format=json`
+  const url = `${COORDINATES_URL}?name=${city}&count=1&language=en&format=json`
+
   try {
     const response = await fetch(url);
     const data = await response.json();

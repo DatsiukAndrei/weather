@@ -80,7 +80,7 @@ function Weather() {
       <img src="/weather.png" alt="Weather" className="w-[200px] h-[200px] mb-2 object-cover"/>
       <h3 className="text-xl font-semibold text-teal-800 mb-2">{generateWeatherStatus(data.temperature)} - {data.temperature}°C</h3>
       <h2 className="text-lg text-teal-700">{dayjs(data.time).format(formatTemplates.date)}</h2>
-      <Link to="/giveaways">Source code</Link>
+      <Link to="https://github.com/DatsiukAndrei/weather">Source code</Link>
     </Layout>
   );
 }
