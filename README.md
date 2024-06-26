@@ -24,16 +24,14 @@ Then run the app in production mode:
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+## Date and Time
 
-### DIY
+This template comes with [day js](https://day.js.org/) already configured for you. You can use it to format dates and times in your app. See the [day js docs](https://day.js.org/docs/en/installation/installation) for more information.
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+## Receiving weather data
 
-Make sure to deploy the output of `npm run build`
+This template comes with a simple example of how to fetch weather data from the [Open Meteo API](https://open-meteo.com/). You can use this as a starting point for fetching data from other APIs.
 
-- `build/server`
-- `build/client`
 
 ## Styling
 

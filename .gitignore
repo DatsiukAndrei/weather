@@ -1,5 +1,21 @@
-node_modules
+# dependencies
+/node_modules
+
 
 /.cache
 /build
+/public/build
 .env
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.log*
+
+# IDE
+.idea
+
+#Build info
+./tsconfig.tsbuildinfo
