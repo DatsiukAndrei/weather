@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running hardcore ESLint... 😈"
+pnpm run lint
+
+echo "Compiling TypeScript... 😈"
+pnpm exec tsc --noEmit
+
+echo "Done. 🥳"
+

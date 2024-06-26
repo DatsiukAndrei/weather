@@ -8,7 +8,7 @@ interface OptionsI {
 
 interface SelectProps {
   options: OptionsI[];
-  value: string;
+  value: string
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
 }
 
