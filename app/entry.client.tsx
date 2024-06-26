@@ -4,10 +4,9 @@ import { hydrateRoot } from "react-dom/client";
 
 startTransition(() => {
   hydrateRoot(
-    //@ts-expect-error - Ignore the error because RemixBrowser is not a valid HTML element
-    document.querySelector("#app"),
+    document,
     <StrictMode>
       <RemixBrowser />
-    </StrictMode>
+    </StrictMode>,
   );
 });
