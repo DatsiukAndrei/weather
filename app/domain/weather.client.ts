@@ -1,3 +1,5 @@
+// This file contains the client logic to fetch weather data from the Open Meteo API.
+
 interface CityWeatherParamsI {
   latitude: number;
   longitude: number;

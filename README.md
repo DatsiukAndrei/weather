@@ -2,12 +2,22 @@
 
 - 📖 [Remix docs](https://remix.run/docs)
 
+## SPA mode
+This template is configured to run in SPA mode. This means that the app will be a single page app that will be rendered on the client side. This is the default mode for Remix apps.
+Docs: [SPA mode](https://remix.run/docs/en/main/guides/spa-mode)
+
+## Package management
+Package management is done using pnpm. To install the required packages, run the following command:
+```shell
+npm install -g pnpm
+```
+
 ## Development
 
 Run the dev server:
 
 ```shellscript
-npm run dev
+pnpm run dev
 ```
 
 ## Deployment
@@ -15,13 +25,13 @@ npm run dev
 First, build your app for production:
 
 ```sh
-npm run build
+pnpm run build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+pnpm run preview
 ```
 
 ## Date and Time
