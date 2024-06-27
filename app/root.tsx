@@ -10,26 +10,23 @@ import {
 import { Layout as PageLayout } from "~/components/layuot/Layout";
 import { type PropsWithChildren } from "react";
 import "./tailwind.css";
-import { LinksFunction } from "@remix-run/node";
-import { getLinks } from "~/getLinks";
-
-export const links: LinksFunction = () => [...getLinks()];
 
 export function Layout({ children }:PropsWithChildren) {
 
   return (
     <html lang="en">
     <head>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <Meta />
-      <Links />
+      <meta charSet="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+      <Meta/>
+      <Links/>
       <title>Weather</title>
     </head>
     <body>
     {children}
-    <ScrollRestoration />
-    <Scripts />
+    <ScrollRestoration/>
+    <Scripts/>
     </body>
     </html>
   );
